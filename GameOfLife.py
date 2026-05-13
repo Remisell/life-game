@@ -148,7 +148,7 @@ def main():
         gui.text("Survival rules (live cell):")
 
         # Создаем чекбоксы для правил выживания
-        for i in range(1, 9):
+        for i in range(0, 9):
             val = gui.checkbox(f"S {i}", survival[i])
             if val != survival[i]:
                 survival[i] = val
@@ -156,7 +156,7 @@ def main():
 
         gui.text("Birth rules (dead cell):")
         # Создаем чекбоксы для правил рождения
-        for i in range(1, 9):
+        for i in range(0, 9):
             val = gui.checkbox(f"B {i}", birth[i])
             if val != birth[i]:
                 birth[i] = val
